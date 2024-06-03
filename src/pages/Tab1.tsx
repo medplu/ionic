@@ -1,25 +1,39 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import { IonButton, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { Action } from '../components/Action';
+import styles from './Tab1.module.css';
 
-const Tab1: React.FC = () => {
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
-      </IonContent>
-    </IonPage>
-  );
+const Home = () => {
+	
+	return (
+		<IonPage className={styles.homepage}>
+  <IonHeader>
+    <IonImg src="https://res.cloudinary.com/dws2bgxg4/image/upload/v1715100266/ueycdq8etsxr1kjyhnqf.jpg" />
+  </IonHeader>
+  <IonContent fullscreen>
+    <div className={styles.getStarted}>
+      <IonGrid>
+        <IonRow className={`ion-text-center ion-justify-content-center ${styles.heading}`}>
+          <IonCol size="11" className={styles.headingText}>
+            <IonCardTitle>Join millions of other people discovering their creative side</IonCardTitle>
+          </IonCol>
+        </IonRow>
+        <IonRow className={`ion-text-center ion-justify-content-center`}>
+          <IonRouterLink routerLink="/signup" className={styles.customLink}>
+            <IonCol size="11">
+              <IonButton className={`${styles.getStartedButton} ${styles.customButton}`}>Get started &rarr;</IonButton>
+            </IonCol>
+          </IonRouterLink>
+        </IonRow>
+      </IonGrid>
+    </div>
+  </IonContent>
+  <IonFooter>
+    <IonGrid>
+      <Action message="Already got an account?" text="Login" link="/login" />
+    </IonGrid>
+  </IonFooter>
+</IonPage>
+	);
 };
 
-export default Tab1;
+export default Home;

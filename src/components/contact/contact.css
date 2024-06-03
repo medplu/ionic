@@ -1,0 +1,16 @@
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .separator {
+    width: 1px;
+    height: 24px;
+    background-color: #ccc;
+    margin: 0 8px;
+    display: inline-block;
+  }
+  

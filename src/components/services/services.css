@@ -1,0 +1,36 @@
+.ion-button-custom {
+    --background: #F97316; /* This is the color for orange-500 in Tailwind CSS */
+    --color: #ffffff; /* This is for the text color, adjust as needed */
+}
+
+
+/* ServicesSection.css */
+
+.ion-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .ion-col {
+    flex: 0 0 auto;
+  }
+
+  .swiper-container{
+    --swiper-scrollbar-bg-color: #300979;
+    
+    --swiper-scrollbar-drag-bg-color: #F97316;
+
+  }
+  ion-card-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ion-card-title {
+    order: 1;
+  }
+  
+  ion-card-subtitle {
+    order: 2;
+  }

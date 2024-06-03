@@ -1,0 +1,58 @@
+.loginPage {
+
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        --padding-top: 1rem;
+        --padding-bottom: 1rem;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+    }
+}
+
+.headingText {
+
+    h5 {
+
+        margin-top: 0.2rem;
+        
+    }
+}
+.loginPage {
+    --ion-background-color: rgb(255, 255, 255);
+    --ion-color-primary: rgb(78, 49, 209);
+    --ion-color-primary-rgb: 236, 149, 35;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0, 0, 0;
+    --ion-color-primary-shade: rgb(236, 149, 35);
+    --ion-color-primary-tint: rgb(236, 149, 35);
+    --ion-color-secondary: #32db64;
+    --ion-color-secondary-rgb: 50, 219, 100;
+    --ion-color-secondary-contrast: #000000;
+  
+    .customBack {
+      color: black;
+    }
+  
+    .customButton {
+      --background: blue;
+      --background-focused: orange-500;
+      --background-hover: orange-500;
+      color: white;
+    }
+  
+    .headingText {
+      color: black;
+      text-align: center;
+  
+      h5 {
+        color: black;
+      }
+    }
+  }
+  .outlineInput {
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 10px;
+  }
